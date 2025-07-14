@@ -19,7 +19,6 @@
     align-items: center;
     text-align: center;
     padding:6rem 2rem;
-    border:2px solid red;
     animation: fadeInUp 0.8s ease;
 }
 

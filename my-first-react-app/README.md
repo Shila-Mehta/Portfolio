@@ -1,4 +1,4 @@
-Project Title:CV Application 
+Project Title:Porfolio 
 
 stack used:
 React ,plain css
@@ -18,3 +18,7 @@ React ,plain css
 ## About Section 
 -Introduced myself and shared key values  and skills 
 -focused  on clarity  and readability
+
+## Skills Section
+-Displayed  core  tech stack as  visually styled  badges
+-Mobile-friendly layout  with hover interaction
