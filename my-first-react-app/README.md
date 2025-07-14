@@ -12,4 +12,9 @@ React ,plain css
 
 ## Hero Section
 -Built  a  hero intro  with  title,subtitle and call-to-action
--Responsive layout  and styled for visual impact .
+-Responsive layout  and styled for visual impact 
+
+
+## About Section 
+-Introduced myself and shared key values  and skills 
+-focused  on clarity  and readability

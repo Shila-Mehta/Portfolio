@@ -1,0 +1,31 @@
+.about{
+    padding:5rem 2rem;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.about-content{
+    max-width: 800px;
+    margin:0 auto;
+}
+
+.about-content h2{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color:#111827;
+}
+
+
+.about-content p{
+    font-size: 1rem;
+    color:#4b5563;
+    line-height: 1.8;
+    margin-bottom: 1.2rem;
+}
+
+.about-img{
+    width:200px;
+    border-radius: 12px;
+    margin: 2rem 0;
+    background-color: greenyellow;
+}
