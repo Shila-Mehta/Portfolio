@@ -1,3 +1,16 @@
+@keyframes fadeInDown{
+
+    from{
+        opacity: 1;
+        transform: translateY(-20px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+        
+    }
+}
+
 .navbar{
     display: flex;
     justify-content: space-between;
@@ -8,6 +21,7 @@
     top:0;
     z-index:1000;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    animation:fadeInDown 0.8s ease-out;
 }
 
 .navbar-logo{

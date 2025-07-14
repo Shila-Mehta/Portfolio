@@ -2,3 +2,14 @@ Project Title:CV Application
 
 stack used:
 React ,plain css
+
+
+
+## Navbar
+-Built a responsive navigation bar with links to each section
+-includes sticky position and hover effects
+
+
+## Hero Section
+-Built  a  hero intro  with  title,subtitle and call-to-action
+-Responsive layout  and styled for visual impact .
