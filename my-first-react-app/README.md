@@ -27,3 +27,7 @@ React ,plain css
 ## Projects section 
 -Featured portfolio projects with description,links and images.
 -Responsive card layout using grid and hover animations
+
+## Contact section 
+-Provided email,Github  and LinkedIn for professsional outreach.
+-Styled with hover effects and responsive layout.
