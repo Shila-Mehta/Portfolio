@@ -31,3 +31,7 @@ React ,plain css
 ## Contact section 
 -Provided email,Github  and LinkedIn for professsional outreach.
 -Styled with hover effects and responsive layout.
+
+## Footer section 
+-Includes name,year and links to social platforms.
+-Styled to match site's color theme
