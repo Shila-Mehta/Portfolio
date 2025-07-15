@@ -22,3 +22,8 @@ React ,plain css
 ## Skills Section
 -Displayed  core  tech stack as  visually styled  badges
 -Mobile-friendly layout  with hover interaction
+
+
+## Projects section 
+-Featured portfolio projects with description,links and images.
+-Responsive card layout using grid and hover animations
