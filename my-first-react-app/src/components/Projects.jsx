@@ -3,6 +3,33 @@ import '../styles/projects.css';
 
 const projects=[
 
+  {
+        title:'Shopping Cart',
+        description: "A dynamic e-commerce shopping cart application that allows users to browse products, add items to the cart, update quantities, and calculate totals in real-time.",
+        technologies:['ReactJs','Tailwind',"fakeClothing Api"],
+        image: "/Images/Shopping Cart.png"  ,
+        liveLink:'https://shopping-cart-nimra.netlify.app/',
+        githubLink:'https://github.com/Shila-Mehta/Shopping-Cart.git',  
+    },
+
+     {
+        title:'Memory Card Game',
+        description: "An interactive memory matching game where users flip cards to find matching pairs. The game tracks score, best score, and includes dynamic content fetched from external APIs (e.g., Pokémon or Giphy).",
+        technologies:['HTML','webpack','CSS','Javascript','Pokemon Api'],
+        image: "/Images/memory-card-game.png"  ,
+        liveLink:'https://shopping-cart-nimra.netlify.app/',
+        githubLink:'https://github.com/Shila-Mehta/Shopping-Cart.git',  
+    },
+
+  {
+        title:'CV Builder',
+        description: "A dynamic CV builder application that allows users to create, preview, and print professional resumes. Features include live editing, customizable sections, and real-time preview of the CV layout.",
+        technologies:['HTML','webpack','CSS','Javascript'],
+        image: "/Images/cv-builder-nimra.netlify.app_ (1).png"  ,
+        liveLink:'https://cv-builder-nimra.netlify.app/',
+        githubLink:'https://github.com/Shila-Mehta/CV-Builder.git',  
+    },
+
     {
         title:'BattleShip  Game',
         description: "A two-player turn-based Battleship game built with JavaScript and DOM manipulation. Includes drag-and-drop ship placement and hit detection.",
@@ -76,24 +103,7 @@ const projects=[
         githubLink:'https://github.com/Shila-Mehta/Sign-up-form.git',
     }
     ,
-    {
-        title:'Rock Paper  Scissor',
-        description:'A  responsive app  built    that fetches real-time weather data  from visual-crossing Includes search,loading state and animated icons',
-        technologies:['HTML','webpack','CSS','API','Javascript'],
-        image: '/Images/Rock-Paper-Scissor.png'  ,
-        liveLink:'https://shila-mehta.github.io/RPS/',
-        githubLink:'https://github.com/Shila-Mehta/RPS.git',
-    },
-
-    {
-        title:'Recipe Page',
-        description:'A  responsive app  built    that fetches real-time weather data  from visual-crossing Includes search,loading state and animated icons',
-        technologies:['HTML','webpack','CSS','API','Javascript'],
-        image: '/Images/Recipes Page.png'  ,
-        liveLink:'https://shila-mehta.github.io/odin_recipes/',
-        githubLink:'https://github.com/Shila-Mehta/odin_recipes.git',
-    },
-
+   
     {
         title:'Calculator',
         description:'A  responsive app  built    that fetches real-time weather data  from visual-crossing Includes search,loading state and animated icons',
@@ -101,24 +111,6 @@ const projects=[
         image: '/Images/Calculator.png'  ,
         liveLink:'https://shila-mehta.github.io/Calculator/',
         githubLink:'https://github.com/Shila-Mehta/Calculator.git',
-    },
-
-    {
-        title:'Etch-a-Sketch',
-        description:'A  responsive app  built    that fetches real-time weather data  from visual-crossing Includes search,loading state and animated icons',
-        technologies:['HTML','webpack','CSS','API','Javascript'],
-        image: '/Images/sketch.png'  ,
-        liveLink:'https://shila-mehta.github.io/Etch-a-Sketch/',
-        githubLink:'https://github.com/Shila-Mehta/Etch-a-Sketch.git',
-    },
-
-    {
-        title:'Landing Page',
-        description:'A  responsive app  built    that fetches real-time weather data  from visual-crossing Includes search,loading state and animated icons',
-        technologies:['HTML','webpack','CSS','API','Javascript'],
-        image:'/Images/Landing-Page.png'   ,
-        liveLink:'https://shila-mehta.github.io/Landing-Page/',
-        githubLink:'https://github.com/Shila-Mehta/Landing-Page.git',
     },
 
     {

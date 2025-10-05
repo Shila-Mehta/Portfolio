@@ -2,17 +2,23 @@ import '../styles/skills.css';
 
 export default  function Skills(){
 
-const skills=[
-    "HTML",
-    "CSS",
-    "JavaScript",
-    "React",
-    "Git",
-    "GitHub",
-    "Responsive Design",
-    "Node.js",
-    "Figma"
-]
+const skills = [
+  "HTML",
+  "CSS",
+  "JavaScript",
+  "React",
+  "Node.js",
+  "Express.js",
+  "MongoDB",
+  "Git",
+  "GitHub",
+  "REST APIs",
+  "Responsive Design",
+  "Figma",
+  "Problem Solving",
+  "Debugging",
+  "CSS Frameworks (Bootstrap/Tailwind)"
+];
 
 
 return(
