@@ -17,7 +17,10 @@ const skills = [
   "Figma",
   "Problem Solving",
   "Debugging",
-  "CSS Frameworks (Bootstrap/Tailwind)"
+  "CSS Frameworks (Bootstrap/Tailwind)",
+  "Java",
+  "C++",
+  "Python"
 ];
 
 
