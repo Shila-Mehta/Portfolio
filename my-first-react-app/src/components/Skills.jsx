@@ -20,7 +20,9 @@ const skills = [
   "CSS Frameworks (Bootstrap/Tailwind)",
   "Java",
   "C++",
-  "Python"
+  "Python",
+  "ejs",
+  "postgres"
 ];
 
 
