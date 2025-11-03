@@ -6,7 +6,7 @@ const projects=[
   {
         title:'Shopping Cart',
         description: "A dynamic e-commerce shopping cart application that allows users to browse products, add items to the cart, update quantities, and calculate totals in real-time.",
-        technologies:['ReactJs','Tailwind',"fakeClothing Api"],
+        technologies:['React','Tailwind',"fakeClothing Api"],
         image: "/Images/Shopping Cart.png"  ,
         liveLink:'https://shopping-cart-nimra.netlify.app/',
         githubLink:'https://github.com/Shila-Mehta/Shopping-Cart.git',  
@@ -15,7 +15,7 @@ const projects=[
      {
         title:'Memory Card Game',
         description: "An interactive memory matching game where users flip cards to find matching pairs. The game tracks score, best score, and includes dynamic content fetched from external APIs (e.g., Pokémon or Giphy).",
-        technologies:['HTML','webpack','CSS','Javascript','Pokemon Api'],
+        technologies:['HTML','webpack','CSS','React','Pokemon Api'],
         image: "/Images/memory-card-game.png"  ,
         liveLink:'https://shopping-cart-nimra.netlify.app/',
         githubLink:'https://github.com/Shila-Mehta/Shopping-Cart.git',  
@@ -24,7 +24,7 @@ const projects=[
   {
         title:'CV Builder',
         description: "A dynamic CV builder application that allows users to create, preview, and print professional resumes. Features include live editing, customizable sections, and real-time preview of the CV layout.",
-        technologies:['HTML','webpack','CSS','Javascript'],
+        technologies:['HTML','webpack','CSS','React'],
         image: "/Images/cv-builder-nimra.netlify.app_ (1).png"  ,
         liveLink:'https://cv-builder-nimra.netlify.app/',
         githubLink:'https://github.com/Shila-Mehta/CV-Builder.git',  
@@ -52,7 +52,7 @@ const projects=[
     {
         title:'Todo List',
         description:'A  responsive app  built    that fetches real-time weather data  from visual-crossing Includes search,loading state and animated icons',
-        technologies:['HTML','webpack','CSS','API','Javascript'],
+        technologies:['HTML','webpack','CSS','Javascript'],
         image: '/Images/TodoList.png'  , 
         liveLink:'https://shila-mehta.github.io/Todo-List/',
         githubLink:'https://github.com/Shila-Mehta/Todo-List.git',
@@ -61,7 +61,7 @@ const projects=[
     {
         title:'Restaurant Page',
         description:'A  responsive app  built    that fetches real-time weather data  from visual-crossing Includes search,loading state and animated icons',
-        technologies:['HTML','webpack','CSS','API','Javascript'],
+        technologies:['HTML','webpack','CSS','Javascript'],
         image: '/Images/Restaurant.png' ,
         liveLink:'https://shila-mehta.github.io/Restaurant/',
         githubLink:'https://github.com/Shila-Mehta/Restaurant.git',
@@ -70,7 +70,7 @@ const projects=[
     {
         title:'Tic  Tac Toe',
         description:'A  responsive app  built    that fetches real-time weather data  from visual-crossing Includes search,loading state and animated icons',
-        technologies:['HTML','webpack','CSS','API','Javascript'],
+        technologies:['HTML','webpack','CSS','Javascript'],
         image: '/Images/Tic Tac Toe.png'  ,
         liveLink:'https://shila-mehta.github.io/TicTacToe/',
         githubLink:'https://github.com/Shila-Mehta/TicTacToe.git',
@@ -79,7 +79,7 @@ const projects=[
     {
         title:'Library',
         description:'A  responsive app  built    that fetches real-time weather data  from visual-crossing Includes search,loading state and animated icons',
-        technologies:['HTML','webpack','CSS','API','Javascript'],
+        technologies:['HTML','webpack','CSS','Javascript'],
         image: '/Images/Library.png'  ,
         liveLink:'https://shila-mehta.github.io/Libraray/',
         githubLink:'https://github.com/Shila-Mehta/Libraray.git',
@@ -88,7 +88,7 @@ const projects=[
     {
         title:'Admin Dashboard',
         description:'A  responsive app  built    that fetches real-time weather data  from visual-crossing Includes search,loading state and animated icons',
-        technologies:['HTML','webpack','CSS','API','Javascript'],
+        technologies:['HTML','webpack','CSS'],
         image: '/Images/Admin Dashboard.png'  ,
         liveLink:'https://shila-mehta.github.io/my_dashboard/',
         githubLink:'https://github.com/Shila-Mehta/my_dashboard.git',
@@ -97,7 +97,7 @@ const projects=[
     {
         title:'Sign Up Form',
         description:'A  responsive app  built    that fetches real-time weather data  from visual-crossing Includes search,loading state and animated icons',
-        technologies:['HTML','webpack','CSS','API','Javascript'],
+        technologies:['HTML','CSS'],
         image:  '/Images/Sign-up.png' ,
         liveLink:'https://shila-mehta.github.io/Sign-up-form/',
         githubLink:'https://github.com/Shila-Mehta/Sign-up-form.git',
@@ -107,7 +107,7 @@ const projects=[
     {
         title:'Calculator',
         description:'A  responsive app  built    that fetches real-time weather data  from visual-crossing Includes search,loading state and animated icons',
-        technologies:['HTML','webpack','CSS','API','Javascript'],
+        technologies:['HTML','CSS'],
         image: '/Images/Calculator.png'  ,
         liveLink:'https://shila-mehta.github.io/Calculator/',
         githubLink:'https://github.com/Shila-Mehta/Calculator.git',
@@ -116,7 +116,7 @@ const projects=[
     {
         title:'Drop Down Menu',
         description:'A  responsive app  built    that fetches real-time weather data  from visual-crossing Includes search,loading state and animated icons',
-        technologies:['HTML','webpack','CSS','API','Javascript'],
+        technologies:['HTML','CSS','Javascript'],
         image: '/Images/DropDownMenu.png'  ,
         liveLink:'https://shila-mehta.github.io/DropDown-Menu/',
         githubLink:'https://github.com/Shila-Mehta/DropDown-Menu.git',
@@ -125,7 +125,7 @@ const projects=[
     {
         title:'Image Carousel',
         description:'A  responsive app  built    that fetches real-time weather data  from visual-crossing Includes search,loading state and animated icons',
-        technologies:['HTML','webpack','CSS','API','Javascript'],
+        technologies:['HTML','webpack','CSS','Javascript'],
         image: '/Images/Image-carousel.png'  ,
         liveLink:'https://shila-mehta.github.io/Image-carousel/',
         githubLink:'https://github.com/Shila-Mehta/Image-carousel.git',
