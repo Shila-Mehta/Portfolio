@@ -1,5 +1,7 @@
 import '../styles/hero.css';
 import { useEffect, useState } from 'react';
+import { motion } from "framer-motion";
+
 
 export default function Hero() {
   const roles = ['Full-Stack Developer', 'React Specialist', 'Node.js Expert'];
@@ -45,6 +47,14 @@ export default function Hero() {
           <div className="hero-buttons">
             <button className="btn primary-btn" onClick={() => scrollToSection('#projects')}>Explore My Work</button>
             <button className="btn secondary-btn" onClick={() => scrollToSection('#contact')}>Contact Me</button>
+            <motion.a
+              href="/resume.pdf"
+              download="Nimra_Abdul_Jabbar_Resume.pdf"
+              className="resume-btn-hero  btn  primary-btn"
+              whileHover={{ scale: 1.05, boxShadow: "0 0 30px rgba(108, 92, 231, 0.6)" }}
+            >
+              Download Resume
+            </motion.a>
           </div>
         </div>
         <div className="hero-visual">
