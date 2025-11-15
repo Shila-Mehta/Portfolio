@@ -2,10 +2,43 @@ import { useState, useEffect, useRef } from 'react';
 import '../styles/projects.css';
 
 const projects = [
+ {
+  title: 'SaaS LMS Project',
+  description:
+    "An AI-powered SaaS Learning Management System featuring role-based dashboards (Admin, Instructor, Student), OAuth login, secure authentication, course management, and progress tracking. Built with Docker for scalability. Future roadmap includes AI tutoring, real-time chat, analytics, gamification, and payments.",
+  technologies: [
+    'Next.js 15',
+    'React 19',
+    'Redux',
+    'TypeScript',
+    'Tailwind CSS',
+    'NestJS',
+    'Node.js',
+    'Express',
+    'PostgreSQL',
+    'Prisma',
+    'MongoDB',
+    'JWT',
+    'Passport.js',
+    'Google OAuth',
+    'GitHub OAuth',
+    'Stripe',
+    'Docker',
+    'Turborepo',
+    'OpenAI API',
+    'Machine Learning',
+    'CI/CD',
+  ],
+  image: '/Images/lms2.png',
+  liveLink: '#',
+  githubLink: 'https://github.com/Shila-Mehta/LMS-Project.git',
+  status: 'in-progress',
+},
+
   {
     title: 'E-Commerce Website',
     description: "A full-stack MERN e-commerce platform featuring secure user authentication, product management, cart functionality, Stripe payments, and an admin dashboard. Built with modern UI and RESTful API architecture.",
-    technologies: ['MongoDB', 'Express', 'React', 'Node.js', 'Stripe', 'Tailwind', "JWT", "NodeMailer", "Multer", "bcrypt", "pdfkit","chartjs"],
+    technologies: ['MongoDB', 'Express', 'React', 'Node.js', 'Stripe', 'Tailwind', "JWT", "NodeMailer", "Multer", "bcrypt", "pdfkit", "chartjs"],
     image: '/Images/ecommerce-website-homePage.png',
     liveLink: 'https://github.com/Shila-Mehta/ecommerce-website.git',
     githubLink: 'https://github.com/Shila-Mehta/ecommerce-website.git',
@@ -17,7 +50,7 @@ const projects = [
     technologies: ['Node.js', 'Express', 'EJS', 'CSS', 'JavaScript', 'PostgreSQL'],
     image: "/Images/Inventry.png",
     liveLink: 'https://github.com/Shila-Mehta/Inventry-Application.git',
-    githubLink:'https://github.com/Shila-Mehta/Inventry-Application.git',
+    githubLink: 'https://github.com/Shila-Mehta/Inventry-Application.git',
     featured: true,
   },
   {
@@ -174,52 +207,46 @@ export default function Projects() {
       if (card) observer.observe(card);
     });
 
-    if (sectionRef.current) {
-      sectionObserver.observe(sectionRef.current);
-    }
+    if (sectionRef.current) sectionObserver.observe(sectionRef.current);
 
     return () => {
       cardRefs.current.forEach((card) => {
         if (card) observer.unobserve(card);
       });
-      if (sectionRef.current) {
-        sectionObserver.unobserve(sectionRef.current);
-      }
+      if (sectionRef.current) sectionObserver.unobserve(sectionRef.current);
     };
   }, [visibleProjects]);
 
   // Filter and search logic
   useEffect(() => {
     let filtered = projects;
-    
-    // Apply category filter
+
     if (filter === 'fullstack') {
-      filtered = projects.filter(p => 
+      filtered = projects.filter(p =>
         p.technologies.some(t => ['MongoDB', 'Express', 'Node.js', 'PostgreSQL', 'EJS'].includes(t))
       );
     } else if (filter === 'frontend') {
-      filtered = projects.filter(p => 
+      filtered = projects.filter(p =>
         p.technologies.some(t => ['React', 'HTML', 'CSS', 'Javascript'].includes(t)) &&
         !p.technologies.some(t => ['MongoDB', 'Express', 'Node.js', 'PostgreSQL'].includes(t))
       );
     } else if (filter === 'game') {
-      filtered = projects.filter(p => 
-        p.title.toLowerCase().includes('game') || 
+      filtered = projects.filter(p =>
+        p.title.toLowerCase().includes('game') ||
         p.title.toLowerCase().includes('battleship') ||
         p.title.toLowerCase().includes('tic tac')
       );
     }
-    
-    // Apply search filter
+
     if (searchQuery.trim()) {
       const query = searchQuery.toLowerCase();
-      filtered = filtered.filter(p => 
+      filtered = filtered.filter(p =>
         p.title.toLowerCase().includes(query) ||
         p.description.toLowerCase().includes(query) ||
         p.technologies.some(t => t.toLowerCase().includes(query))
       );
     }
-    
+
     setVisibleProjects(filtered);
   }, [filter, searchQuery]);
 
@@ -231,14 +258,10 @@ export default function Projects() {
     <section className='projects' id='projects' ref={sectionRef}>
       <div className='projects-header'>
         <h2>
-          <span className={`section-title ${isVisible ? 'animate-title' : ''}`}>
-            Featured Projects
-          </span>
-          <span className={`section-subtitle ${isVisible ? 'animate-subtitle' : ''}`}>
-            A showcase of my work
-          </span>
+          <span className={`section-title ${isVisible ? 'animate-title' : ''}`}>Featured Projects</span>
+          <span className={`section-subtitle ${isVisible ? 'animate-subtitle' : ''}`}>A showcase of my work</span>
         </h2>
-        
+
         <div className='search-filter-container'>
           <div className='search-box'>
             <svg className='search-icon' width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -253,11 +276,7 @@ export default function Projects() {
               className='search-input'
             />
             {searchQuery && (
-              <button
-                className='clear-search'
-                onClick={() => setSearchQuery('')}
-                aria-label="Clear search"
-              >
+              <button className='clear-search' onClick={() => setSearchQuery('')} aria-label="Clear search">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                   <line x1="18" y1="6" x2="6" y2="18"></line>
                   <line x1="6" y1="6" x2="18" y2="18"></line>
@@ -265,7 +284,7 @@ export default function Projects() {
               </button>
             )}
           </div>
-          
+
           <div className='filter-buttons'>
             {categories.map(category => (
               <button
@@ -282,8 +301,7 @@ export default function Projects() {
         <div className='project-count'>
           <span className='count-number'>{visibleProjects.length}</span>
           <span className='count-text'>
-            {visibleProjects.length === 1 ? 'project' : 'projects'} 
-            {searchQuery && ` found`}
+            {visibleProjects.length === 1 ? 'project' : 'projects'}{searchQuery && ` found`}
           </span>
         </div>
       </div>
@@ -296,77 +314,54 @@ export default function Projects() {
           </svg>
           <h3>No projects found</h3>
           <p>Try adjusting your search or filter criteria</p>
-          <button 
-            className='reset-filters-btn'
-            onClick={() => {
-              setSearchQuery('');
-              setFilter('all');
-            }}
-          >
-            Reset Filters
-          </button>
+          <button className='reset-filters-btn' onClick={() => { setSearchQuery(''); setFilter('all'); }}>Reset Filters</button>
         </div>
       ) : (
         <div className='projects-grid'>
           {visibleProjects.map((project, index) => (
-            <div 
+            <div
               ref={(el) => (cardRefs.current[index] = el)}
-              className={`project-card ${project.featured ? 'featured' : ''}`} 
+              className={`project-card ${project.featured ? 'featured' : ''}`}
               key={`${project.title}-${index}`}
               style={{ animationDelay: `${index * 0.08}s` }}
             >
-            <div className='project-image-container'>
-              <img 
-                src={project.image} 
-                alt={`${project.title} screenshot`}
-                loading="lazy"
-              />
-              <div className='project-overlay'>
-                <div className='project-links'>
-                  <a 
-                    href={project.liveLink} 
-                    target='_blank' 
-                    rel="noopener noreferrer"
-                    className='link-btn live-link'
-                    aria-label={`View ${project.title} live demo`}
-                  >
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                      <polyline points="15 3 21 3 21 9"></polyline>
-                      <line x1="10" y1="14" x2="21" y2="3"></line>
-                    </svg>
-                    Live Demo
-                  </a>
-                  <a 
-                    href={project.githubLink} 
-                    target='_blank' 
-                    rel="noopener noreferrer"
-                    className='link-btn github-link'
-                    aria-label={`View ${project.title} source code`}
-                  >
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                      <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                    </svg>
-                    Code
-                  </a>
+              <div className='project-image-container'>
+                <img src={project.image} alt={`${project.title} screenshot`} loading="lazy" />
+                <div className='project-overlay'>
+                  <div className='project-links'>
+                    <a href={project.liveLink} target='_blank' rel="noopener noreferrer" className='link-btn live-link' aria-label={`View ${project.title} live demo`}>
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                        <polyline points="15 3 21 3 21 9"></polyline>
+                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                      </svg>
+                      Live Demo
+                    </a>
+                    <a href={project.githubLink} target='_blank' rel="noopener noreferrer" className='link-btn github-link' aria-label={`View ${project.title} source code`}>
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                      </svg>
+                      Code
+                    </a>
+                  </div>
                 </div>
               </div>
-            </div>
-            
-            <div className='project-info'>
-              <div className='project-header'>
-                <h3>{project.title}</h3>
-                {project.featured && <span className='featured-badge'>Featured</span>}
+
+              <div className='project-info'>
+                <div className='project-header'>
+                  <h3>{project.title}</h3>
+                  {project.featured && <span className='featured-badge'>Featured</span>}
+                  {project.status && <span className={`project-status-badge ${project.status}`}>{project.status.replace('-', ' ')}</span>}
+                </div>
+                <p>{project.description}</p>
+                <ul className='project-tech'>
+                  {project.technologies.map((tech, idx) => (
+                    <li key={idx}>{tech}</li>
+                  ))}
+                </ul>
               </div>
-              <p>{project.description}</p>
-              <ul className='project-tech'>
-                {project.technologies.map((tech, idx) => (
-                  <li key={idx}>{tech}</li>
-                ))}
-              </ul>
             </div>
-          </div>
-        ))}
+          ))}
         </div>
       )}
     </section>

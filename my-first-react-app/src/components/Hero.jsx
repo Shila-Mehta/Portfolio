@@ -35,7 +35,7 @@ export default function Hero() {
   };
 
   return (
-    <section className="hero">
+    <section className="hero"  id='about'>
       <div className="hero-container">
         <div className="hero-text">
           <h1>Hello, I'm <span className="name-highlight">Nimra</span></h1>

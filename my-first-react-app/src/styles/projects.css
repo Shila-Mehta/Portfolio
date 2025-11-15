@@ -238,7 +238,7 @@
 .projects-grid {
     display: grid;
     gap: 2rem;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
     max-width: 1400px;
     margin: 0 auto;
     transition: all 0.3s ease;
@@ -413,7 +413,7 @@
     flex: 1;
 }
 
-.featured-badge {
+.featured-badge ,.project-status-badge {
     padding: 0.25rem 0.75rem;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
@@ -516,6 +516,10 @@
     transform: translateY(0);
 }
 
+
+
+
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .projects {
@@ -582,3 +586,5 @@
         margin-top: 1rem;
     }
 }
+
+
