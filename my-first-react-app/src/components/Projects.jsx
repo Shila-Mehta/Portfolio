@@ -60,6 +60,7 @@ const projects = [
     image: "/Images/Shopping Cart.png",
     liveLink: 'https://shopping-cart-nimra.netlify.app/',
     githubLink: 'https://github.com/Shila-Mehta/Shopping-Cart.git',
+    DemoVideo:"https://www.linkedin.com/feed/update/urn:li:activity:7387184736403714048/",
     featured: true,
   },
   {
@@ -69,6 +70,7 @@ const projects = [
     image: "/Images/memory-card-game.png",
     liveLink: 'https://github.com/Shila-Mehta/memory-card-game',
     githubLink: 'https://github.com/Shila-Mehta/memory-card-game',
+    DemoVideo:"https://www.linkedin.com/feed/update/urn:li:activity:7389238777434554368/"
   },
   {
     title: 'CV Builder',
@@ -77,6 +79,7 @@ const projects = [
     image: "/Images/cv-builder-nimra.netlify.app_ (1).png",
     liveLink: 'https://cv-builder-nimra.netlify.app/',
     githubLink: 'https://github.com/Shila-Mehta/CV-Builder.git',
+    DemoVideo:"https://www.linkedin.com/feed/update/urn:li:activity:7386760796766339072/",
     featured: true,
   },
   {
@@ -86,7 +89,20 @@ const projects = [
     image: "/Images/BattleShip.png",
     liveLink: 'https://shila-mehta.github.io/Battleship/',
     githubLink: 'https://github.com/Shila-Mehta/Battleship.git',
+    DemoVideo:"https://www.linkedin.com/feed/update/urn:li:activity:7387726746978119680/"
   },
+
+  {
+  title: 'AI Agent Calculator',
+  description:
+    'A next-level, intelligent calculator powered by AI agents and workflow automation. Includes natural-language input, dynamic calculations, and automated decision-making using n8n workflows. Features clean UI, smooth interactions, and real-time AI responses for complex queries.',
+  technologies: ['HTML', 'CSS', 'JavaScript', 'n8n', 'OpenAI API'],
+  image: '/Images/Ai-calculator-Agent.png',
+  liveLink: 'https://shila-mehta.github.io/CodeAplha_task_2/',
+  githubLink: 'https://github.com/Shila-Mehta/CodeAplha_task_2.git',
+  DemoVideo:"https://www.linkedin.com/feed/update/urn:li:activity:7394812645125677056/"
+},
+
   // {
   //   title: 'Weather App',
   //   description: 'A responsive weather application that fetches real-time weather data from Visual Crossing API. Features include location search, loading states, animated weather icons, and detailed forecast information.',
@@ -118,6 +134,7 @@ const projects = [
     image: '/Images/Tic Tac Toe.png',
     liveLink: 'https://shila-mehta.github.io/TicTacToe/',
     githubLink: 'https://github.com/Shila-Mehta/TicTacToe.git',
+    DemoVideo:"https://www.linkedin.com/feed/update/urn:li:activity:7386391646873198593/"
   },
   // {
   //   title: 'Library',
