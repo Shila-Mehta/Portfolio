@@ -32,7 +32,7 @@ const projects = [
     description: "A full-stack MERN e-commerce platform featuring secure user authentication, product management, cart functionality, Stripe payments, and an admin dashboard. Built with modern UI and RESTful API architecture.",
     technologies: ['MongoDB', 'Express', 'React', 'Node.js', 'Stripe', 'Tailwind', "JWT", "NodeMailer", "Multer", "bcrypt", "pdfkit", "chartjs"],
     image: '/Images/ecommerce-website-homePage.png',
-    liveLink: 'https://github.com/Shila-Mehta/ecommerce-website.git',
+    liveLink: 'https://nimra-ecommerce-website-frontend.netlify.app/',
     githubLink: 'https://github.com/Shila-Mehta/ecommerce-website.git',
     featured: true,
   },
